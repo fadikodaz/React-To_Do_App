@@ -1,0 +1,170 @@
+.toDo
+{
+    width: 100%;
+    min-height: calc(100vh - 120px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title
+{
+    margin: 20px 0;
+    text-transform: capitalize;
+    color: #CEBEA4;
+    font-size: 2em;
+}
+
+.title.active
+{
+    color:#28292c;
+}
+
+.fieldBox
+{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 20px;
+    border: 1px solid transparent;
+    border: 1px solid #28292c;
+    border-radius: 10px;
+    transition: 0.3s;
+    gap: 20px;
+}
+.fieldBox input,
+.fieldBox textarea
+{
+    width: 100%;
+    height: 45px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    font-size: 1.1em;
+    color: #CEBEA4;
+    background-color: #1E1E1E;
+}
+.fieldBox.active input,
+.fieldBox.active textarea
+{
+    color: #28292c;
+    background-color: #ccc;
+}
+.fieldBox input:focus,
+.fieldBox textarea:focus
+{
+    border: 1px solid #FF5631;
+}
+.fieldBox.active input:focus,
+.fieldBox.active textarea:focus
+{
+    border: 1px solid #28292c;
+}
+.fieldBox textarea
+{
+    width: 100%;
+    height: 100px;
+    resize: none;
+}
+.addBtn
+{
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #FF5631;
+    color: #0D0D0D;
+    font-size: 1.1em;
+    cursor: pointer;
+    font-weight: 500;
+}
+.addBtn:hover
+{
+    background-color: #fb4820;
+    transition: 0.5s;
+}
+
+
+.TaskDisplayBox
+{
+    width: 900px;
+    margin: 20px 0;
+    /* background-color: red; */
+}
+.TaskDisplayBox h1
+{
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 50px;
+    color: #CEBEA4;
+    text-align: left;
+    padding: 0 10px;
+    line-height: 50px;
+}
+.TaskDisplayBox h1.active
+{
+    color: #28292c;
+}
+.task
+{
+    background-color: #1E1E1E;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.task.active,
+.task.active p
+{
+    background-color: #ddd;
+    color: #28292c;
+}
+.task h3
+{
+    font-size: 1.5em;
+    color: #FF5631;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.task p
+{
+    text-transform: capitalize;
+    color: #CEBEA4;
+}
+
+.task button
+{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 25px;
+    border: none;
+    outline: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color:#FF5631;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 900px) {
+    .TaskDisplayBox
+    {
+        width: 100%;
+        padding: 20px;
+    }
+  }

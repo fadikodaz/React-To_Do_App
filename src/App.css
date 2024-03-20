@@ -1,0 +1,10 @@
+.Main_Page
+{
+    background-color: #0D0D0D;
+    width: 100%;
+    min-height: 100vh;
+}
+.Main_Page.activeMode
+{
+    background-color: #D8DBE0;
+}
